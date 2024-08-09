@@ -1,14 +1,11 @@
 from django.shortcuts import render
-
+from django.contrib import messages
+from django.http import HttpResponseRedirect,HttpResponse
 # Create your views here.
 
-def login_register(request):
-    if request.method == "POST":
-        type_of_btn = request.POST.get('log')
-        if type_of_btn == 'login':
-            print('login detected')
-        if type_of_btn == 'signup':
-            print('signup detected')
 
+def login(request):
+    return render(request,'login.html')
 
-    return render(request,'login_signup.html')
+def register(request):
+    return render(request,'register.html')

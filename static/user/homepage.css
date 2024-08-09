@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 70px;
+    background-color: #7DFDFE;
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+.msg-box{
+    text-align: center;
+}
+
+.msg-box a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.input-box{
+    width: 750px;
+    /* border: 1px solid black; */
+    height: 70%;
+    padding: 10px 0 5px 0;
+    background-color: #eaecee ;
+    margin: 10px;
+    border-radius: 7px;
+}
+.input-box img{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 7px;
+    object-fit: contain;
+    margin-left: 7px;
+}
+
+.input-box input{
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 8px;
+    background: transparent;
+    font-size: 15px;
+   
+}
+
+.input-box:has(input:focus){
+    background-color: #fff;
+}
+
+.input-note-text{
+    width:700px;
+    height: auto;
+    box-shadow: 0px 0px 5px rgb(191, 191, 191);
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.input-note-text input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+
+.input-note-text textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.main-input{
+    visibility: hidden;
+    height: 0;
+    transition: visibility 0s, height 0.3s ease;
+}
+
+
+.input-note-text:focus-within .main-input{
+    visibility: visible;
+    height: auto; 
+}
+
+
+
+.context{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contains{
+    width: 500px;
+    height: 160px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(191, 191, 191);
+}
+
+.contains textarea{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.info{
+    display: flex;
+    
+}
+
+.info h6{
+    position: relative;
+    top :8px;
+    margin-left: 9px;
+    color: rgb(101, 101, 101);
+}
