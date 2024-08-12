@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 def homepage(request):
-    return render(request,'homepage.html')
+    print(request.user)
+    if str(request.user) == 'AnonymousUser':
+        return redirect('accounts/login')
+    print(request.user.profile.last_seen)
+    return render(request,'homepage.html')  
