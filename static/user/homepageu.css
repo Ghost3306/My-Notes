@@ -14,6 +14,13 @@ body{
     display: flex;
     padding: 0 20px 0 20px;
 }
+.navbar #head{
+    font-weight: 700;
+    font-size: 33px;
+    text-decoration: none;
+    color: #000;
+}
+
 .msg-box{
     text-align: center;
 }
@@ -23,9 +30,13 @@ body{
     color: black;
     font-weight: 600;
 }
+
+.msg-box a:hover{
+    text-decoration: underline;
+    color: red;
+}
 .input-box{
     width: 750px;
-    /* border: 1px solid black; */
     height: 70%;
     padding: 10px 0 5px 0;
     background-color: #eaecee ;
@@ -41,7 +52,7 @@ body{
 }
 
 .input-box input{
-    width: 90%;
+    width: 80%;
     height: 100%;
     outline: none;
     border: none;

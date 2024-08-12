@@ -84,3 +84,8 @@ def activate_profile(request,uuid):
                 'msg':'Invalid token!'
             }   
     return render(request,'activate_email.html',context)
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('/')
